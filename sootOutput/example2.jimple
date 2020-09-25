@@ -1,0 +1,43 @@
+public class example2 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        example2 this;
+
+        this := @this: example2;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        int i, sum;
+        java.io.PrintStream $r0;
+
+        args := @parameter0: java.lang.String[];
+        i = 0;
+        sum = 1;
+        goto label2;
+
+     label0:
+        sum = sum + i;
+        i = i + 1;
+        if i < 11 goto label1;
+
+        goto label3;
+
+     label1:
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(int)>(sum);
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(int)>(i);
+
+     label2:
+        if i < 11 goto label0;
+
+     label3:
+        return;
+    }
+}

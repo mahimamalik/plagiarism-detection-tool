@@ -1,0 +1,46 @@
+public class Test_programs.example1_plagiarised extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        Test_programs.example1_plagiarised this;
+
+        this := @this: Test_programs.example1_plagiarised;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        boolean i;
+        int sum, i, newCode;
+        byte newCode;
+        java.io.PrintStream $r0;
+
+        args := @parameter0: java.lang.String[];
+        i = 0;
+        i = 0;
+        sum = 0;
+        i = 0;
+        goto label1;
+
+     label0:
+        sum = sum + i;
+        i = i + 1;
+        i = i + 1;
+
+     label1:
+        if i < 11 goto label0;
+
+        newCode = 100;
+        newCode = newCode * 100;
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void print(java.lang.String)>("Something Useless");
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(int)>(sum);
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(int)>(i);
+        return;
+    }
+}

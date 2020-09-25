@@ -1,0 +1,37 @@
+public class Test_programs.example1_original extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        Test_programs.example1_original this;
+
+        this := @this: Test_programs.example1_original;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        int sum, i;
+        java.io.PrintStream $r0;
+
+        args := @parameter0: java.lang.String[];
+        sum = 0;
+        i = 1;
+        goto label1;
+
+     label0:
+        sum = sum + i;
+        i = i + 1;
+
+     label1:
+        if i < 11 goto label0;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(int)>(sum);
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(int)>(i);
+        return;
+    }
+}

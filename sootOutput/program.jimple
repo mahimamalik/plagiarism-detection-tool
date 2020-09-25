@@ -1,0 +1,67 @@
+public class program extends java.lang.Object
+{
+
+    void func()
+    {
+        program this;
+        int x, y, temp$1, temp$2;
+        java.lang.String a;
+        boolean temp$0;
+
+        this := @this: program;
+        a = "";
+        temp$0 = virtualinvoke a.<java.lang.String: boolean isEmpty()>();
+        if temp$0 == 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$1 = 1;
+        x = temp$1;
+        goto label2;
+
+     label1:
+        nop;
+        temp$2 = 2;
+        y = temp$2;
+
+     label2:
+        nop;
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] a;
+        java.lang.Integer x, y;
+        int temp$0, temp$1, temp$2;
+        java.io.PrintStream temp$3;
+        java.lang.StringBuffer temp$4;
+        java.lang.String temp$5;
+
+        a := @parameter0: java.lang.String[];
+        temp$0 = 10;
+        x = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$0);
+        temp$1 = virtualinvoke x.<java.lang.Integer: int intValue()>();
+        temp$2 = temp$1 + 2;
+        y = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$2);
+        temp$3 = <java.lang.System: java.io.PrintStream out>;
+        temp$4 = new java.lang.StringBuffer;
+        specialinvoke temp$4.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("First test in SOOT ");
+        virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(y);
+        temp$5 = virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$3.<java.io.PrintStream: void println(java.lang.String)>(temp$5);
+        return;
+    }
+
+    public void <init>()
+    {
+        program this;
+
+        this := @this: program;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}
